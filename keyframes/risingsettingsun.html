@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+
+    <style>
+        body {
+            margin: 0 0 0 0;
+            background-color: #2c3e50;
+        }
+
+        .grass {
+            background: green;
+            height: 600px;
+            width: 100%;
+            position: absolute;
+            z-index: 20;
+        }
+
+        .sun {
+            background: #f1c40f;
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            z-index: 10;
+            animation: sunchange 3s linear 0s infinite;
+        }
+
+        @keyframes sunchange {
+            0% {
+                transform: translate(-50%, 200px);
+                background: orange;
+            }
+            30% {
+                transform: translate(0, 0px);
+                background: yellow;
+            }
+            70% {
+                transform: translate(100%, 100px);
+                background: yellow;
+            }
+            100% {
+                transform: translate(-50%, 200px);
+                background: red;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="sun"></div>
+    <div class="grass"></div>
+
+</body>
+
+</html>
